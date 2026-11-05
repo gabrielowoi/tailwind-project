@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.font-serif{
+    font-family: "Source Serif 4", serif;
+}
+
+.font-sans{
+     font-family: "DM Sans", sans-serif;
+}
+
+@keyframes sliding{
+    0%{
+        transform: translateX(100vw);
+    }
+    
+    100%{
+        transform: translateX(0);
+    }
+
+}
+
+.animate-sliding{
+    animation: sliding 2s linear;
+}
+
+@media(max-width:994px){
+    .my-wrap{
+        width: 100%;
+    }
+}
+
+.animate-bounce{
+    animation: forwards 2s linear;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(10px);
+    }
+}
