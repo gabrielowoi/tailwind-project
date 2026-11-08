@@ -743,6 +743,12 @@
     .sm\:grid-cols-3 {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+    .sm\:items-start {
+      align-items: flex-start;
+    }
+    .sm\:justify-between {
+      justify-content: space-between;
+    }
     .sm\:gap-3 {
       gap: calc(var(--spacing) * 3);
     }
@@ -799,6 +805,14 @@
     }
     .md\:text-\[15\.5px\] {
       font-size: 15.5px;
+    }
+  }
+  @media (width >= 64rem) {
+    .lg\:w-full {
+      width: 100%;
+    }
+    .lg\:max-w-full {
+      max-width: 100%;
     }
   }
   @media (prefers-color-scheme: dark) {
