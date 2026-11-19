@@ -4,11 +4,13 @@ const togglebtnclose = document.querySelector('.toggle-btn-close');
 
 navToggler.addEventListener('click', function(){
     logoContainer.classList.toggle('translate-x-full');
+    logoContainer.classList.toggle('shadow-2xl')
     // logoContainer.classList.remove('onclicking');
 });
 
 togglebtnclose.addEventListener('click', () =>{
     logoContainer.classList.toggle('translate-x-full');
+    logoContainer.classList.toggle('shadow-2xl')
     // logoContainer.classList.add('onclicking');
     
 });
