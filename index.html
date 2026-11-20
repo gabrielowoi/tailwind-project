@@ -187,7 +187,7 @@
     </section>
 
 
-    <section class="grid md:grid-cols-4 sm:gap-4 gap-12  px-5 py-4 pb-8  bg-[#FAF7EE] sm:grid-cols-2">
+    <section class="grid md:grid-cols-4 sm:gap-4 gap-12  px-5 py-4 pb-8  bg-[#FAF7EE] sm:grid-cols-2 even:[animation-delay:300ms]">
         <div class="col-span-full text-green-900 text-sm font-sans">This week's picks</div>
         <div class="col-span-full flex flex-col gap-4 md:flex-row justify-between items-baseline">
             <div class="font-serif text-green-900 text-3xl">Fresh off the truck</div>
@@ -200,7 +200,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col gap-2 relative bg-white rounded-2xl border border-slate-400 pb-4 hover:animate-pulse hover:-translate-y-3 transition-all shadow-xl">
+        <div class="animate-pulse flex flex-col gap-2 relative bg-white rounded-2xl border border-slate-400 pb-4  hover:animate-pulse hover:-translate-y-3 transition-all shadow-xl">
             <div class="rounded-3xl px-4 py-3 bg-mist-100 absolute top-3 left-2 text-[10.5px] font-sans shadow-xl">Peak season</div>
             <img src="img/Red, yellow and purple heirloom tomatoes.png" alt="">
             <div class="text-slate-800 font-sans text-sm font-semibold px-3.5 pt-3">Heirloom Tomatoes</div>
@@ -265,7 +265,49 @@
 
     </aside>
 
+<footer class="grid md:grid-cols-2 justify-between  bg-green-950 text-neutral-200 px-5 py-20 gap-10 md:gap-5">
+    <div class="flex flex-col gap-5">
+        <div class="flex gap-2 font-serif items-center  ">  
+            <div class="w-6 h-6 rounded-full bg-neutral-400"></div>
+            <h3 class="font-serif text- text-2xl shadow-xl font-bold text-neutral-300" >Verdant</h3>
+
+        </div>
+        <div class="text-neutral-400 font-sans text-sm">The neighborhood grocer, rebuilt around family farms and fast e-bikes.</div>
+    </div>
     
+    <div class=" grid gap-10 md:gap-2 max-[900px]:grid-cols-2 min-[901px]:grid-cols-3 min-[1000px]:justify-end font-sans text-neutral-400 text-sm">
+        <div>
+            <ul class="list-none flex flex-col gap-3">
+                <li class="text-neutral-500 mb-3 hover:text-neutral-300 transform transition-colors">SHOP</li>
+                <li>Produce</li>
+                <li>Bakery</li>
+                <li>Pantry</li>
+            </ul>
+        </div>
+    
+            <ul class="list-none flex flex-col gap-3">
+                <li class="text-neutral-500 mb-3 hover:text-neutral-300 transform transition-colors">COMPANY</li>
+                <li>Our farms</li>
+                <li>Sustainability</li>
+                <li>Careers</li>
+            </ul>
+        
+    
+            <ul class="list-none flex flex-col gap-3">
+                <li class="text-neutral-500 mb-3 hover:text-neutral-300 transform transition-colors">SUPPORT</li>
+                <li>Help center</li>
+                <li>Delivery zones</li>
+                <li>Contact</li>
+            </ul>
+        
+    </div>
+    <div class=" col-span-full justify-between pt-5 border-t mt-3 border-neutral-500">
+        <div class="flex flex-col md:flex-row justify-between md:items-center gap-3.5 md:gap-0">
+            <div class="text-neutral-500 text-sm font-sans">© 2026 Verdant Market Co.</div>
+            <div class="text-neutral-500 text-sm font-sans">Grown with care in the Hudson Valley</div>
+        </div>
+    </div>
+</footer>
 
     
 </body>
