@@ -47,13 +47,13 @@
  
 
 @theme{
-    --animate-float: float 5s linear infinite;
+    --animate-float: float 5s ease-out forwards;
     @keyframes float{
         0%{
             transform:translateX(100vw)
         }
         100%{
-            transform:translateX(-60vw)
+            transform:translateX(-100vw)
         }
     }
 }
