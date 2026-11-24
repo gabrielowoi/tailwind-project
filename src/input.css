@@ -45,3 +45,15 @@
 }
 
  
+
+@theme{
+    --animate-float: float 5s linear infinite;
+    @keyframes float{
+        0%{
+            transform:translateX(100vw)
+        }
+        100%{
+            transform:translateX(-60vw)
+        }
+    }
+}
