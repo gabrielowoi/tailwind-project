@@ -5,12 +5,14 @@ const togglebtnclose = document.querySelector('.toggle-btn-close');
 navToggler.addEventListener('click', function(){
     logoContainer.classList.toggle('translate-x-full');
     logoContainer.classList.toggle('shadow-2xl')
+    logoContainer.classList.add('bg-white')
     // logoContainer.classList.remove('onclicking');
 });
 
 togglebtnclose.addEventListener('click', () =>{
     logoContainer.classList.toggle('translate-x-full');
     logoContainer.classList.toggle('shadow-2xl')
+    
     // logoContainer.classList.add('onclicking');
     
 });
@@ -30,7 +32,7 @@ function navbBackground (){
         navbar.classList.remove("bg-white");
         navbar.classList.remove("shadow-2xl");
     }
-    window.addEventListener("scroll", navbBackground, {passive: true});
+    window.addEventListener("scroll", navbBackground);
 
 };
 
