@@ -21,6 +21,30 @@ console.log(logoContainer);
 console.log(navToggler);
 
 const navbar = document.querySelector('.header-bg');
+window.addEventListener("scroll", () =>{
+    if(window.scrollY > 50){
+        navbar.classList.add("z-50");
+        navbar.classList.add("fixed");
+        navbar.classList.add("bg-white");
+        navbar.classList.add("shadow-xl");
+        navbar.classList.add("top-0");
+    }else{
+        navbar.classList.remove("z-50");
+        navbar.classList.remove("fixed");
+        navbar.classList.remove("bg-white");
+        navbar.classList.remove("shadow-2xl");
+        logoContainer.classList.remove('bg-white')
+        navbar.classList.remove("top-0");
+    }
+    
+    
+});
+
+
+
+
+
+/*
 function navbBackground (){
     if(window.scrollY > 50){
         navbar.classList.add("z-50");
@@ -40,8 +64,7 @@ function navbBackground (){
     window.addEventListener("scroll", navbBackground, {passive:true});
 
 };
-
 navbBackground();
+*/
 
-console.log(navbar);
 
